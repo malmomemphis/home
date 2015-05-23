@@ -125,7 +125,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
 .main article h1 {
@@ -134,7 +134,7 @@ nav a:hover {
 
 .main aside {
     color: white;
-    padding: 0px 5% 10px;
+    padding: 0px 2% 10px;
 }
 
 .footer-container footer {
@@ -215,9 +215,9 @@ nav a:hover {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px rgba(#000, .3);
+        position: relative;
+
     }
 
 /* ============
@@ -245,7 +245,7 @@ nav a:hover {
 
     .main aside {
         float: right;
-        width: 28%;
+        width: 35%;
     }
 }
 
