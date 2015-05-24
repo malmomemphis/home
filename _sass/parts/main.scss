@@ -64,19 +64,21 @@ body {
     width: 90%;
     margin: 0 5%;
 }
-
+.wrapper {
+    position: relative
+}
 /* ===================
     ALL: Orange Theme
    =================== */
 
 .footer-container,
-.main aside {
+.main aside section {
     border-top: 20px solid #e44d26;
 }
 
 .header-container,
 .footer-container,
-.main aside {
+.main aside section{
     background: #f16529;
 }
 
@@ -98,7 +100,7 @@ body {
 
 .main aside {
     color: white;
-    padding: 0px 2% 10px;
+    padding: 0;
 }
 
 .footer-container footer {
