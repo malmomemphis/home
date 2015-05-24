@@ -1,1 +1,1 @@
-!function(){for(var e,n=function(){},o=["assert","clear","count","debug","dir","dirxml","error","exception","group","groupCollapsed","groupEnd","info","log","markTimeline","profile","profileEnd","table","time","timeEnd","timeline","timelineEnd","timeStamp","trace","warn"],i=o.length,r=window.console=window.console||{};i--;)e=o[i],r[e]||(r[e]=n)}();
+window.onscroll=function(){var o=document.getElementById("facts-sidebar");o.className=document.body.scrollTop+document.documentElement.scrollTop>240?"stuck":""};
