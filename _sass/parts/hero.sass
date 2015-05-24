@@ -1,7 +1,8 @@
 .hero
   background: transparent url('../img/memphis.jpg') center center no-repeat
-  padding: 50px 2em
+  padding: 100px 2em
   text-align: center
+  background-color: #FFF
   h1
     color: #fff
     font-size: 4em
@@ -9,3 +10,11 @@
     text-shadow: 0 0 10px rgba(#000, .8)
     span
       white-space: nowrap
+  @media only screen and (max-width: 1140px)
+    h1
+      font-size: 3em
+  @media only screen and (max-width: 768px)
+    h1
+      font-size: 2em
+      span
+        white-space: normal
