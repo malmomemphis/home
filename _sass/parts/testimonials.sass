@@ -1,0 +1,42 @@
+#testimonials
+	ul, li
+		list-style: none
+		margin: 0
+		padding: 0
+	ul
+		display: flex
+		justify-content: center
+		flex-flow: row wrap
+		margin-bottom: 2em
+		li
+			background-color: #fff
+			box-shadow: 0 10px 20px rgba(#000, .1)
+			color: #E44D26
+			font-size: 16px
+			flex: 1 1 200px
+			margin: 10px
+			border-radius: 10px
+			padding: 20px
+			vertical-align: middle
+			position: relative
+			.quote
+				font-size: 20px
+				padding: 0
+				margin: 0 0 20px
+			.source
+				font-size: 13px
+				font-family: arial
+				color: #666
+				strong
+					font-family: arial
+			&:after
+				content: ""
+				position: absolute
+				bottom: -15px
+				left: 50%
+				margin-left: -15px
+				border-width: 15px 15px 0
+				border-style: solid
+				border-color: #fff transparent
+				display: block
+				width: 0
