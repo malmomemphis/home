@@ -1,8 +1,24 @@
 .hero
-  background: transparent url('../img/memphis.jpg') center center no-repeat
-  padding: 100px 2em
+  background: transparent url('../img/dede_hero-1x.jpg') center center no-repeat
+  @media only screen and (max-width: 580px)
+    background-image: url('../img/dede_hero-.5x.jpg')
+  @media only screen and (min-width: 1200px)
+    background-image: url('../img/dede_hero-2x.jpg')
+  background-size: cover
+  padding: 0
   text-align: center
   background-color: #FFF
+  max-width: 1500px
+  margin: auto
+  figure
+    width: auto
+    float: none
+    max-width: 1500px
+    text-align: center
+    margin: auto
+    img
+      max-width: 100%
+      margin: auto
   h1
     color: #fff
     font-size: 4em
