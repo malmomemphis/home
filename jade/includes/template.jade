@@ -1,5 +1,6 @@
 doctype html
 html
+  block vars
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
@@ -83,43 +84,46 @@ html
       block hero
 .main-container
   .main.wrapper.clearfix
-    blockquote.quote
-      &ldquo;You negotiate a lease every five years. A landlord and his agent do it every day. So do I. Get me on your side.&rdquo;
+    unless contactform
+      blockquote.quote
+        &ldquo;You negotiate a lease every five years. A landlord and his agent do it every day. So do I. Get me on your side.&rdquo;
     article
-      section
-        figure.dede
-          img(src='img/dede_round_photo.jpg', alt='Dede Malmo')
-        p
-          strong Dede Malmo, CCIM
-          |  locates &amp; negotiates office, retail and industrial space for tenants in Memphis and Nashville.
-        p
-          a.button(href='#') Get in Touch
+      unless contactform
+        section
+          figure.dede
+            img(src='img/dede_round_photo.jpg', alt='Dede Malmo')
+          p
+            strong Dede Malmo, CCIM
+            |  locates &amp; negotiates office, retail and industrial space for tenants in Memphis and Nashville.
+          p
+            a.button(href='/get-in-touch.html') Get in Touch
       section
       block content
-    aside.facts
-      section#facts-sidebar
-        h3 Even if you don&rsquo;t select Malmo, you should know these facts.
-        ol
-          li
-            a(href='facts.html#f1') You need an agent who represents only you
-          li
-            a(href='facts.html#f2') There may be up to 20 extra costs hidden in your lease
-          li
-            a(href='facts.html#f3') All the landlord&rsquo;s &ldquo;Standard&rdquo; terms may not be standard
-          li
-            a(href='facts.html#f4') Your lease probably has 35 critical factors besides rent
-          li
-            a(href='facts.html#f5') Don&rsquo;t just assume you can sub-lease
-          li
-            a(href='facts.html#f6') You need to know how the property is managed
-          li
-            a(href='facts.html#f7') There&rsquo;s more to location than first meets the eye
-          li
-            a(href='facts.html#f8') Never wait to negotiate renewal
-          li
-            a(href='facts.html#f9') Without options you&rsquo;re a prisoner
-          li
-            a(href='facts.html#f10') Have you considered buying vs. leasing
+    unless contactform
+      aside.facts
+        section#facts-sidebar
+          h3 Even if you don&rsquo;t select Malmo, you should know these facts.
+          ol
+            li
+              a(href='facts.html#f1') You need an agent who represents only you
+            li
+              a(href='facts.html#f2') There may be up to 20 extra costs hidden in your lease
+            li
+              a(href='facts.html#f3') All the landlord&rsquo;s &ldquo;Standard&rdquo; terms may not be standard
+            li
+              a(href='facts.html#f4') Your lease probably has 35 critical factors besides rent
+            li
+              a(href='facts.html#f5') Don&rsquo;t just assume you can sub-lease
+            li
+              a(href='facts.html#f6') You need to know how the property is managed
+            li
+              a(href='facts.html#f7') There&rsquo;s more to location than first meets the eye
+            li
+              a(href='facts.html#f8') Never wait to negotiate renewal
+            li
+              a(href='facts.html#f9') Without options you&rsquo;re a prisoner
+            li
+              a(href='facts.html#f10') Have you considered buying vs. leasing
 
 .footer-container
   footer.wrapper

@@ -1,0 +1,20 @@
+extends includes/template
+block vars
+	- var contactform = 'y'
+block content
+	h1
+		| Contact Dede
+	p Please fill out the form below, or simply call 901-537-7447.
+	form(action='https://formaholic.com/f/991c9d7436b75d8e', method='POST')
+		div
+			label.label(for='name') Name:
+			input.input(type='text', name='name')
+		div
+			label.label(for='email') E-mail:
+			input.input(type='email', name='email', required='true')
+		div
+			label.label(for='msg') Message:
+			textarea.input#msg(maxlength='1000', required='')
+		.form-button
+			input.input.button(type='submit', value='Send your message')
+
